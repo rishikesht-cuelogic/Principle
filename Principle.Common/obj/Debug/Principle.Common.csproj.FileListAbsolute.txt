@@ -1,0 +1,4 @@
+D:\Test\Principle\Principle.Common\bin\Debug\Principle.Common.dll
+D:\Test\Principle\Principle.Common\bin\Debug\Principle.Common.pdb
+D:\Test\Principle\Principle.Common\obj\Debug\Principle.Common.dll
+D:\Test\Principle\Principle.Common\obj\Debug\Principle.Common.pdb

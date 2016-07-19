@@ -1,0 +1,4 @@
+D:\Test\Principle\Principle.Models\bin\Debug\Principle.Models.dll
+D:\Test\Principle\Principle.Models\bin\Debug\Principle.Models.pdb
+D:\Test\Principle\Principle.Models\obj\Debug\Principle.Models.dll
+D:\Test\Principle\Principle.Models\obj\Debug\Principle.Models.pdb

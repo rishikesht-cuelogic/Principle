@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Network</title>
+    <meta charset="utf-8" />
+
+    <!-- Libraries -->
+    <script src="assets/scripts/angular.js"></script>
+    <script src="assets/scripts/angular-route.js"></script>
+    <script src="assets/scripts/angular-messages.js"></script>
+    <script src="assets/scripts/angular-resource.js"></script>
+
+    <!-- Configuration and Navigation -->
+    <script src="app/app-module.js"></script>
+    <script src="app/app-config.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/components/home/home-controller.js"></script>
+    <script src="app/components/info/info-controller.js"></script>
+
+    <!-- Services -->
+    <script src="app/services/common-service.js"></script>
+
+    <!-- Factories -->
+    <script src="app/factories/logger-factory.js"></script>
+    <script src="app/factories/data-access-factory.js"></script>
+
+    <!-- Style -->
+    <link href="assets/styles/style-reset.css" rel="stylesheet" />
+    <link href="assets/styles/style-app.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div ng-app="dpDesign">
+
+        <!-- Begin Header -->
+        <header>
+            <h1>Patterns & Practices | Developer Network</h1>
+        </header>
+        <!-- End Header -->
+
+        <!-- Begin Content -->
+        <nav class="navigation">
+            <a class="xs-padding" href="#home">Home</a>
+            <a class="xs-padding" href="#info">Info</a>
+        </nav>
+        <section id="nav-content" class="xs-margin xs-padding" ng-view></section>
+        <!-- End Content -->
+        
+        <!-- Begin Footer -->
+        <footer class="footer">
+            <div class="xs-padding footer-title">
+                <div class="header3">Microsoft Pro &copy; 2016</div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+</body>
+</html>

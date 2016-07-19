@@ -1,0 +1,51 @@
+﻿<span class="header3">{{ vm.title }}</span>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="entity in vm.entities">
+            <td>{{ entity.Id }}</td>
+            <td>{{ entity.Name }}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">
+                Total number of records: {{ vm.entities.length }}
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<div>
+    <input type="button" class="btn btn-default" value="Recommendations" ng-click="vm.getRecommendation()"/>
+</div>
+
+<table border="1" ng-show="vm.recommendations.length > 0">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Recommendations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="entity in vm.recommendations">
+            <td>{{ entity.Id }}</td>
+            <td>{{ entity.Name }}</td>
+            <td>{{ entity.Suggestions }}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                Total number of records: {{ vm.recommendations.length }}
+            </td>
+        </tr>
+    </tfoot>
+</table>

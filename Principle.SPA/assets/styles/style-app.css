@@ -1,0 +1,201 @@
+﻿
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+html{
+    min-height: 100%; 
+    position: relative;   
+}
+
+body {
+    font-family: "Segoe UI" !important;
+    margin: 0 !important;
+    height: 100%;
+    
+}
+
+.main-wrapper{
+    padding-bottom: 50px;
+}
+
+.navigation {
+    line-height: 31px;
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+    /* unvisited link */
+
+    a:link {
+        color: midnightblue;
+    }
+
+    /* visited link */
+
+    a:visited {
+        color: midnightblue;
+    }
+
+    /* mouse over link */
+
+    a:hover {
+        color: black;
+        background-color: lightgray;
+    }
+
+    /* selected link */
+
+    a:active {
+        color: midnightblue;
+    }
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: larger;
+}
+
+h3 {
+    font-size: medium;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+}
+
+.border {
+    border: solid 1px;
+    margin: auto !important;
+}
+
+.xs-margin {
+    margin: 5px;
+}
+
+.xs-padding {
+    padding: 5px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.btn-default {
+    background-color: #007acc;
+}
+
+    .btn-default:hover {
+        background-color: #015085;
+    }
+
+.btn-primary {
+    background-color: #ccc;
+}
+
+    .btn-primary:hover {
+        background-color: #333;
+    }
+
+header{
+    padding:10px;
+    background: #000;
+}
+
+header h1 {
+    background: url('../../assets/images/icon-code.png') no-repeat left center;
+    background-size: 30px auto;
+    padding: 10px 10px 10px 40px;
+    color: #fff;
+    margin: 0;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    /*background-color: #0078d7;*/
+    background-color: rgb(238, 238, 238);
+    height: 50px;
+}
+
+.footer-title {
+    color: #000;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.inputs {
+    padding: 8px;
+    border: 1px solid #b08585;
+    width: 270px;
+}
+
+.dropdown {
+    padding: 8px;
+    border: 1px solid #b08585;
+    width: 288px;
+}
+
+.input.focus {
+    outline-color: #54B4AD;
+}
+
+
+.checkbox {
+    background: transparent;
+    border: inherit;
+    width: auto;
+}
+
+.control-container {
+    padding-top: 5px;
+}
+
+.control-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.control-value {
+    font-size: 20px;
+}
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+

@@ -1,0 +1,7 @@
+D:\Test\Principle\Principle.Repository\bin\Debug\Principle.Repository.dll
+D:\Test\Principle\Principle.Repository\bin\Debug\Principle.Repository.pdb
+D:\Test\Principle\Principle.Repository\bin\Debug\Principle.Models.dll
+D:\Test\Principle\Principle.Repository\bin\Debug\Principle.Models.pdb
+D:\Test\Principle\Principle.Repository\obj\Debug\Principle.Repository.csprojResolveAssemblyReference.cache
+D:\Test\Principle\Principle.Repository\obj\Debug\Principle.Repository.dll
+D:\Test\Principle\Principle.Repository\obj\Debug\Principle.Repository.pdb
