@@ -14,6 +14,6 @@
                })
                .otherwise({
                    // default page
-                   redirectTo: "/home"
+                   redirectTo: "/info"
                })
        });
