@@ -25,54 +25,47 @@
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
-html{
-    min-height: 100%; 
-    position: relative;   
+html {
+    min-height: 100%;
+    position: relative;
 }
 
 body {
     font-family: "Segoe UI" !important;
     margin: 0 !important;
     height: 100%;
-    
+    padding-bottom: 80px;
 }
 
-.main-wrapper{
+.main-wrapper {
     padding-bottom: 50px;
 }
 
 .navigation {
     line-height: 31px;
     background-color: #eeeeee;
+    overflow: hidden;
 }
+
+    .navigation a {
+        color: #333;
+        padding: 8px 16px;
+        display: block;
+        float: left;
+    }
+
+        .navigation a:hover {
+            background: #ccc;
+            color: #000;
+        }
 
 a {
     text-decoration: none;
+    color: #007acc;
 }
 
-    /* unvisited link */
-
-    a:link {
-        color: midnightblue;
-    }
-
-    /* visited link */
-
-    a:visited {
-        color: midnightblue;
-    }
-
-    /* mouse over link */
-
-    a:hover {
-        color: black;
-        background-color: lightgray;
-    }
-
-    /* selected link */
-
-    a:active {
-        color: midnightblue;
+    a:visited, a:hover, a:active {
+        color: #333;
     }
 
 h1 {
@@ -128,25 +121,25 @@ h3 {
         background-color: #333;
     }
 
-header{
-    padding:10px;
+header {
+    padding: 10px;
     background: #000;
 }
 
-header h1 {
-    background: url('../../assets/images/icon-code.png') no-repeat left center;
-    background-size: 30px auto;
-    padding: 10px 10px 10px 40px;
-    color: #fff;
-    margin: 0;
-    font-weight: 100;
-    font-size: 20px;
-}
+    header h1 {
+        background: url('../../assets/images/icon-code.png') no-repeat left center;
+        background-size: 50px auto;
+        padding: 10px 10px 10px 70px;
+        color: #fff;
+        margin: 0;
+        font-weight: 100;
+        font-size: 20px;
+    }
 
 .footer {
     position: absolute;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     bottom: 0;
     /*background-color: #0078d7;*/
     background-color: rgb(238, 238, 238);
@@ -195,7 +188,136 @@ header h1 {
     font-size: 20px;
 }
 
-
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
+input[type="text"] {
+    border: 1px solid #ccc;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.table-title {
+    font-size: 18px;
+    padding: 0;
+    margin: 0 12px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.table-actions {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+    .table-actions h4 {
+        float: left;
+    }
+
+    .table-actions .add-entity {
+        float: right;
+    }
+
+.table {
+    width: 100%;
+    border: 1px solid #eee;
+    margin: 20px 0 20px;
+}
+
+    .table th {
+        background: #eeeeee;
+        font-weight: 500;
+    }
+
+    .table td {
+        border-bottom: 1px solid #eee;
+    }
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    .table tbody td {
+        width: 50%;
+    }
+
+    .table tfoot {
+        background: #eeeeee;
+    }
+
+        .table tfoot td {
+            text-align: right;
+            padding-right: 30px;
+        }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.margin-top30 {
+    margin-top:30px;
+}
+.padding-left30 {
+    padding-left:30px;
+}
+.info-wrapper{
+    padding:0 20px;
+}
+.info-wrapper h1{
+    margin:14px 0;
+    font-size:18px;
+    font-weight:500;
+}
+.info-wrapper h4{
+    margin:14px 0;
+    font-size:24px;
+    font-weight:500;
+}
+.info-wrapper h3{
+    margin:14px 0;
+    font-size:16px;
+    font-weight:500;
+}
+.info-wrapper ol{
+    margin:20px 0;
+
+}
+.info-wrapper ol li{
+    padding:5px 10px 10px 5px;
+}
+.info-wrapper table{
+    border:1px solid #ccc;
+    margin:20px 0 20px;
+
+}
+.info-wrapper table td{
+    padding:10px;
+    text-align:center;
+    min-width:30px;
+}
+.insertion{
+    background:#def8e1;
+}
+.substitution{
+    background:#fff9e5;
+}
+.deletion{
+    background:#fecccc;
+}
+.header-column{
+    background:#ccc;
+}
+.header-row{
+    background:#ccc;
+}
+.header-row-index{
+    background:#ead9fa;
+}
+.header-column-index{
+    background:#ead9fa;
+}
+.diagonal-index{
+    background:#d3e5f2;
+}
+.diagonal-index-value{
+    background:#b9d9f1;
+}

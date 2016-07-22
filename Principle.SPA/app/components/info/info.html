@@ -1,1 +1,234 @@
-﻿<span class="header3">{{ vm.title }}</span>
+﻿<div class="info-wrapper">
+    <h4>{{ vm.title }}</h4>
+
+    <div>
+        <h1>Introduction</h1>
+        <div class="padding-left30">
+            <p>
+                The Levenshtein distance is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other. It is named after Vladimir Levenshtein, who considered this distance in 1965.
+            </p>
+            <p>
+                Levenshtein distance may also be referred to as edit distance, although that may also denote a larger family of distance metrics. It is closely related to pairwise string alignments.
+            </p>            
+        </div>
+    </div>
+
+    <div>
+        <h1>Example</h1>
+        <ol>
+            <li>
+                The Levenshtein distance between "FLOMAX" and "VOLMAX" is 3, since the following three edits change one into the other, and there is no way to do it with fewer than three edits:
+                <div>
+                    <table border="1">
+                        <tr>
+                            <td class="insertion"></td>
+                            <td class="substitution">F</td>
+                            <td>L</td>
+                            <td class="deletion">O</td>
+                            <td>M</td>
+                            <td>A</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td class="insertion">V</td>
+                            <td class="substitution">O</td>
+                            <td>L</td>
+                            <td class="deletion"></td>
+                            <td>M</td>
+                            <td>A</td>
+                            <td>X</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                Levenshtein distance between "GILY" and "GEELY" is 2
+                <div>
+                    <table border="1">
+                        <tr>
+                            <td>G</td>
+                            <td class="substitution">I</td>
+                            <td class="insertion"></td>
+                            <td>L</td>
+                            <td>Y</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td class="substitution">E</td>
+                            <td class="insertion">E</td>
+                            <td>L</td>
+                            <td>Y</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                Levenshtein distance between "HONDA" and "HYUNDAI" is 3
+                <div>
+                    <table border="1">
+                        <tr>
+                            <td>H</td>
+                            <td class="insertion"></td>
+                            <td class="substitution">O</td>
+                            <td>N</td>
+                            <td>D</td>
+                            <td>A</td>
+                            <td class="insertion"></td>
+                        </tr>
+                        <tr>
+                            <td>H</td>
+                            <td class="insertion">Y</td>
+                            <td class="substitution">U</td>
+                            <td>N</td>
+                            <td>D</td>
+                            <td>A</td>
+                            <td class="insertion">I</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h1>Application</h1>
+        <div>
+            <ol>
+                <li>String Matching (correction systems for optical character recognition).</li>
+                <li>Spelling Checking.</li>
+                <li>Software to assist natural language translation based on translation memory.</li>
+            </ol>
+        </div>
+        <div class="padding-left30">
+            <h3>
+                Note
+            </h3>
+            <div class="padding-left30">
+                The Levenshtein distance can also be computed between two longer strings, but the cost to compute it, which is roughly proportional to the product of the two string lengths, makes this impractical. Thus, when used to aid in fuzzy string searching in applications such as record linkage, the compared strings are usually short to help improve speed of comparisons.
+            </div>
+        </div>
+    </div>
+    <div class="margin-top30">
+        <h1>Dynamic Programming Approach</h1>
+        <div class="padding-left30">
+            The Levenshtein algorithm calculates the least number of edit operations that are necessary to modify one string to obtain another string.
+            The most common way of calculating this is by the dynamic programming approach.
+            <ol>
+                <li>A matrix is initialized measuring in the (m, n) cell the Levenshtein distance between the m-character prefix of one with the n-prefix of the other word.</li>
+                <li>The matrix can be filled from the upper left to the lower right corner.</li>
+                <li>Each jump horizontally or vertically corresponds to an insert or a delete, respectively.</li>
+                <li>The cost is normally set to 1 for each of the operations.</li>
+                <li>The diagonal jump can cost either one, if the two characters in the row and column do not match else 0, if they match. Each cell always minimizes the cost locally.</li>
+                <li>This way the number in the lower right corner is the Levenshtein distance between both words.</li>
+            </ol>
+            <div>
+                An example that features the comparison of "HONDA" and "HYUNDAI",
+                <table border="1">
+                    <tr class="header-row">
+                        <td class="header-column-index"></td>
+                        <td class="header-column-index"></td>
+                        <td>H</td>
+                        <td>Y</td>
+                        <td>U</td>
+                        <td>N</td>
+                        <td>D</td>
+                        <td>A</td>
+                        <td>I</td>
+                    </tr>
+                    <tr class="header-row-index">
+                        <td></td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">H</td>
+                        <td class="header-column-index">1</td>
+                        <td class="diagonal-index">0</td>
+                        <td class="diagonal-index">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">O</td>
+                        <td class="header-column-index">2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td class="diagonal-index">2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">N</td>
+                        <td class="header-column-index">3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td class="diagonal-index">2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">D</td>
+                        <td class="header-column-index">4</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td class="diagonal-index">2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">A</td>
+                        <td class="header-column-index">5</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td class="diagonal-index">2</td>
+                        <td class="diagonal-index-value">3</td>
+                    </tr>
+                </table>
+
+                Levenshtein distance between "HONDA" and "HYUNDAI" is 3
+                <table border="1">
+                    <tr>
+                        <td>H</td>
+                        <td class="insertion"></td>
+                        <td class="substitution">O</td>
+                        <td>N</td>
+                        <td>D</td>
+                        <td>A</td>
+                        <td class="insertion"></td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td class="insertion">Y</td>
+                        <td class="substitution">U</td>
+                        <td>N</td>
+                        <td>D</td>
+                        <td>A</td>
+                        <td class="insertion">I</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="margin-top30">
+        <h1>Use Case</h1>
+        <div class="padding-left30">The objective is to find approximate string matches for short strings, in situations where a small number of differences is to be expected. The short strings could come from a dictionary, for instance. Here, one of the strings is typically short, while the other is arbitrarily long.</div>
+    </div>
+
+</div>

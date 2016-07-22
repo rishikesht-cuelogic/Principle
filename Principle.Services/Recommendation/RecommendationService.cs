@@ -49,6 +49,15 @@ namespace Principle.Services.Recommendation
                                        Name = groupsuggestion.Key.Entity,
                                        Suggestions = string.Join(",", groupsuggestion.Select(x => x.SuggestedEntity))
                                    }).ToList();
+
+            var allEntities = collection.Select(x => x.Name);
+            var matchEntities = recommendations.Select(x => x.Name);
+
+            var diff = allEntities.Except(matchEntities);
+            var motion = diff.Select(x => new RecommendationModel { Name = x });
+
+            recommendations.AddRange(motion);
+
             return recommendations;
         }
         #endregion

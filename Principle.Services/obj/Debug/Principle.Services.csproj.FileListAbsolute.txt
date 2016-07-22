@@ -9,3 +9,14 @@ D:\Test\Principle\Principle.Services\bin\Debug\Principle.Repository.pdb
 D:\Test\Principle\Principle.Services\obj\Debug\Principle.Services.csprojResolveAssemblyReference.cache
 D:\Test\Principle\Principle.Services\obj\Debug\Principle.Services.dll
 D:\Test\Principle\Principle.Services\obj\Debug\Principle.Services.pdb
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Services.dll
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Services.pdb
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Common.dll
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Models.dll
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Repository.dll
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Common.pdb
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Models.pdb
+D:\Projects\Live\Principle\Principle.Services\bin\Debug\Principle.Repository.pdb
+D:\Projects\Live\Principle\Principle.Services\obj\Debug\Principle.Services.csprojResolveAssemblyReference.cache
+D:\Projects\Live\Principle\Principle.Services\obj\Debug\Principle.Services.dll
+D:\Projects\Live\Principle\Principle.Services\obj\Debug\Principle.Services.pdb
