@@ -13,6 +13,15 @@ Levenshtein distance may also be referred to as edit distance, although that may
 
 ##Project Structure
 
+In this solution (Principle.sln) file there are 6 projects
+
+1. Principle.Common: Class library which contains common logic code.
+2. Principle.Models: Class library which contains data models to communicate between end points.
+3. Principle.Repository: Class library which contains logic of data operations and mock data logic files.
+4. Principle.Services: Class library which exposes services to API.
+5. Principle.API: API project which provides data to Single Page Application.
+6. Principle.SPA: Web project which contains Single Page Application.
+
 ##Installation
 
 **Software Requirement**
