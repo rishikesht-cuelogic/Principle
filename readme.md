@@ -41,7 +41,7 @@ Following are the steps:
 * Get API URL
 * Replace API URL in javascript file
 
-**HOW TO:**
+**HOW TO**
 
 1. Get API URL
 
