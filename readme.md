@@ -82,9 +82,23 @@ function getRecommendationCommunicator() {
 ```
 Replace "API-URL" with API URL (for e.g. http://localhost:54952)
 
+#Reference
+
+Wiki reference:
+https://en.wikipedia.org/wiki/Levenshtein_distance
+
+Example:
+http://www.levenshtein.net/
+
+Implementation:
+http://www.dotnetperls.com/levenshtein
+
+
 #Contributing
+
 * Nikhil Babar
 
 #Thanks
+
 * Vikrant Labade
 * Sandeep Paithankar
