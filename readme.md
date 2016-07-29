@@ -84,7 +84,7 @@ Replace "API-URL" with API URL (for e.g. http://localhost:54952)
 
 #Contributing
 * Nikhil Babar
-* Sandeep Paithankar
 
 #Thanks
 * Vikrant Labade
+* Sandeep Paithankar
