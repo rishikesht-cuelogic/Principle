@@ -47,7 +47,8 @@ Following are the steps:
 
 **HOW TO**
 
-1. Get API URL
+* Get API URL
+
 ```
 1. Right click on Principle.API project 
 2. Select Properties option
@@ -56,7 +57,8 @@ Following are the steps:
 5. Copy the URL and paste it in Javascript file
 ```
 
-2. Replace API URL in javascript file
+* Replace API URL in javascript file
+
 ```
 function getMasterCommunicator() {
     var communicator = $resource("API-URL/api/home", {},
