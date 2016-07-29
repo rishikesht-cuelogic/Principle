@@ -57,7 +57,7 @@ Following are the steps:
 5. Copy the URL and paste it in Javascript file
 ```
 
-* Replace API URL in javascript file
+* Replace API URL in app\factories\data-access-factory.js file
 
 ```
 function getMasterCommunicator() {
