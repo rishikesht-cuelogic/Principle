@@ -26,16 +26,20 @@ In this solution (Principle.sln) file there are 6 projects
 
 **Software Requirement**
 
-1. Visual Studio
+1. Visual Studio 2013 and above
+
+**.NET Version**
+
+.NET Framework 4.5.2
 
 **Prerequisite**
 
-1. Web API 2 
-2. AngularJS
+1. Knowledge of Web API 2 
+2. Knowledge of AngularJS
 
 **Configuration**
 
-To run project, need to setup API url in app\factoris\data-access-factory.js file
+To run project, need to setup API url in app\factories\data-access-factory.js file
 
 Following are the steps:
 * Get API URL
@@ -44,8 +48,13 @@ Following are the steps:
 **HOW TO**
 
 1. Get API URL
-
-
+```
+1. Right click on Principle.API project 
+2. Select Properties option
+3. Go to Web tab
+4. Under Server section get Project Url
+5. Copy the URL and paste it in Javascript file
+```
 
 2. Replace API URL in javascript file
 ```
