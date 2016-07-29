@@ -72,9 +72,7 @@
     <Content Include="app\components\home\home.html" />
     <Content Include="app\components\info\info-controller.js" />
     <Content Include="app\components\info\info.html" />
-    <Content Include="app\directives\user-profile-directive.js" />
     <Content Include="app\factories\data-access-factory.js" />
-    <Content Include="app\factories\logger-factory.js" />
     <Content Include="app\services\common-service.js" />
     <Content Include="assets\images\icon-code.png" />
     <Content Include="assets\scripts\angular-animate.js" />
