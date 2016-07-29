@@ -100,5 +100,5 @@ http://www.dotnetperls.com/levenshtein
 
 #Thanks
 
-* Vikrant Labade
+* Vikrant Labade  https://github.com/vikrantlabde
 * Sandeep Paithankar
