@@ -101,4 +101,4 @@ http://www.dotnetperls.com/levenshtein
 #Thanks
 
 * Vikrant Labade  https://github.com/vikrantlabde
-* Sandeep Paithankar
+* Sandeep Paithankar  https://github.com/sandeepp-cuelogic
